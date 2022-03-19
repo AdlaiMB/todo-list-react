@@ -1,6 +1,7 @@
 import {useState, useRef} from 'react';
 import Item from './Item';
-import './Todo.css'
+import './Todo.css';
+import './Item.css'
 
 function Todo(){
 

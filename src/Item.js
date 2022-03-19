@@ -5,7 +5,7 @@ function Item({id, task, removeTask}) {
     return (
         <div className="Item">
             <div>{task}</div>
-            <button onClick={removeItem}>X</button>
+            <button onClick={removeItem}>-</button>
         </div>
     )
 

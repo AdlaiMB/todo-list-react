@@ -1,0 +1,18 @@
+.Item {
+    color: white;
+    font-size: 2rem;
+}
+
+.Item div {
+    display: inline;
+
+}
+
+.Item button {
+    height: 2rem;
+    width: 2rem;
+    background: #854545;
+    border: solid 1px #854545;
+    display: inline;
+}
+
