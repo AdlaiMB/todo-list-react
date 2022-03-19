@@ -7,6 +7,15 @@ function Todo(){
     const [task, setTask] = useState({});
     const [tasksList, setTasksList] = useState([]);
 
+    const createTask = (task) => {
+
+        const key = Math.floor(Math.random() * 1000000);
+        task = task.target.value;
+
+        setTask({key, id: key, task});
+
+    }
+
     const addTask = () => {
 
         if (taskInput.current.value === ""){
@@ -41,7 +50,7 @@ function Todo(){
 
     return (
     <div className="Todo">
-        <input ref={taskInput} onChange={(task) => setTask({key: tasksList.length, id:tasksList.length, task: task.target.value})} placeholder="enter your task"/>
+        <input ref={taskInput} onChange={createTask} placeholder="enter your task"/>
         <button onClick={addTask}> Create Task </button>
         <div>
             { tasksList.map((item) => ( 
