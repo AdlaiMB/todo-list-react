@@ -1,0 +1,28 @@
+.Todo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Todo h1 {
+    font-size: 4rem;
+}
+
+.Todo input {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    width: 16rem;
+    height: 2rem;
+    border: solid white;
+    border-radius: 1rem;
+}
+
+.Todo button {
+    margin:20px;
+    background-color: #458547; 
+    display: inline;
+    border: solid #458547;
+    border-radius: 1rem;
+}
