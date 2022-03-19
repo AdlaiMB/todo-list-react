@@ -1,5 +1,6 @@
 import {useState, useRef} from 'react';
 import Item from './Item';
+import './Todo.css'
 
 function Todo(){
 
@@ -48,9 +49,10 @@ function Todo(){
 
     return (
     <div className="Todo">
+        <h1>Todo List</h1>
         <input ref={taskInput} onChange={createTask} placeholder="enter your task"/>
-        <button onClick={addTask}> Create Task </button>
-        <div>
+        <button onClick={addTask}> + </button>
+        <div className="Todo-items">
             { tasksList.map((item) => ( 
                     <Item {...item} removeTask={removeTask}/>
             ))
