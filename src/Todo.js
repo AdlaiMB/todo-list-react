@@ -42,8 +42,6 @@ function Todo(){
 
         }
 
-        console.log(newTasksList);
-
         setTasksList(newTasksList);
 
     }
